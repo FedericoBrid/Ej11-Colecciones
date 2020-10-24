@@ -1,4 +1,7 @@
  <?php
+ require_once "Proveedor.php";
+ require_once "LineaCompra.php";
+
 class PedidoCompra
 {
      private $fecha;
