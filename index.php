@@ -5,7 +5,7 @@ require_once "modelo/Producto.php";
 require_once "modelo/Proveedor.php";
 
 $proveedor = new Proveedor();
-$proveedor->setId(01);
+$proveedor->setId(1);
 $proveedor->setDescripcion("Caromar");
 
 $producto1 = new Producto();
@@ -31,9 +31,9 @@ $lineaCompra2->setCostoUnitario("$35");
 $lineaCompra2->setFueEntregado("Si");
 
 $pedidoCompra = new PedidoCompra();
-$pedidoCompra->setFecha(15/10/2020);
+$pedidoCompra->setFecha("15/10/2020");
 $pedidoCompra->setProveedor($proveedor);
-$pedidoCompra->setFechaEntregaEstimada("15:00 hs");
+$pedidoCompra->setFechaEntregaEstimada("03/11/2020");
 $pedidoCompra->setCostoTotal("$294");
 $pedidoCompra->setPedidoCerrado("Si");
 $pedidoCompra->setLineaCompra($lineaCompra1);
